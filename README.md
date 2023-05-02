@@ -1,5 +1,5 @@
 <!-- ![boardgame!](server/public/pics/banner1.jpg) -->
-<img src="server/public/pics/banner1.jpg" alt="boardgame" width="600" height="200">
+<img src="server/public/pics/banner1.jpg" alt="boardgame" width="800" height="200">
 
 ### Gamestagram
 
