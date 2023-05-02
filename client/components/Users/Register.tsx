@@ -60,9 +60,7 @@ export default function Register() {
       }
       await addUser(newUser)
       setshowRegister(false)
-    } else {
-      console.log('user not signed in')
-    }
+    } 
   }
 
   const handleClickImageButton = () => {

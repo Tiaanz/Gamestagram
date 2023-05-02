@@ -9,7 +9,6 @@ export async function getUserById(id: number) {
 }
 
 export async function editUserById(id: number, input: string) {
-  console.log('edituser is here:', input)
   return await request.patch(`${rootUrlUsers}/${id}`).send({ photoUrl:input })
 }
 

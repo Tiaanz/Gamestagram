@@ -38,19 +38,18 @@ export default function Nav() {
     setDropdownOpen(!dropdownOpen)
   }
   const handleLogIn = () => {
-    console.log('log in function ran')
+ 
 
     loginWithRedirect({
       redirectUri: 'http://localhost:3000',
     })
   }
   const handleLogOut = () => {
-    console.log('log out function ran')
     logout()
   }
 
   const handleSignUp = () => {
-    console.log('sign up function ran')
+   
     loginWithRedirect({
       redirectUri: 'http://localhost:3000/profile',
     })

@@ -36,7 +36,6 @@ export default function EditEventPage() {
 
   useEffect(() => {
     destructureTime()
-    console.log(event.time)
   }, [event.time])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

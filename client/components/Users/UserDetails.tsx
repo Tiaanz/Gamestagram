@@ -16,8 +16,7 @@ export default function UserDetails() {
   })
 
   const handleLogIn = () => {
-    console.log('log in function ran')
-
+   
     loginWithRedirect({
       redirectUri: 'http://localhost:3000',
     })
