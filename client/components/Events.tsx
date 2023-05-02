@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useEventsStore } from '../store/useEventsStore'
 import { shallow } from 'zustand/shallow'
 import EventCard from './EventCard'

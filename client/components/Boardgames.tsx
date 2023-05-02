@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import ImageBanner from './subcomponents/ImageBanner'
 import GameCard from './GameCard'
 import { useGamesStore } from '../store/useGamesStore'
@@ -27,7 +27,6 @@ export default function Boardgames() {
         game.name.toLowerCase().includes(input)
       )
       setGames(filterdGames)
-     
     } else {
       fetchGamesFromAPI(100)
     }
@@ -35,7 +34,6 @@ export default function Boardgames() {
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
     const keyword = event.target.value
-
     filterGame(keyword)
   }
 
@@ -76,13 +74,19 @@ export default function Boardgames() {
             ))}
           </section>
         ) : (
-          <Box sx={{ display: 'flex', justifyContent: 'center',marginTop:"50px" }}>
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '50px',
+            }}
+          >
             <CircularProgress />
           </Box>
-        )  
-        }
-        {!isLoading && games.length===0 && <h1 className='text-2xl text-blue-600'>Game not found</h1>}
-       
+        )}
+        {!isLoading && games.length === 0 && (
+          <h1 className="text-2xl text-blue-600">Game not found</h1>
+        )}
       </div>
     </>
   )

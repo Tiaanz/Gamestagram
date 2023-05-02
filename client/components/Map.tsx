@@ -84,5 +84,5 @@ function Map({ address }: MapProps) {
 
   return <div id="map" className="w-80 h-80" />
 }
-// style={{ width: '200px', height: '25%' }}
+
 export default Map

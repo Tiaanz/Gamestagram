@@ -3,29 +3,20 @@ import {
   FormattedEventWithUser,
   UserJoinEvent,
   EditEvent,
+  snakeEvent
 } from '../../models/Event'
-interface snakeEvent {
-  host_id: number
-  event_name: string
-  game_id: string
-  description: string
-  location: string |undefined
-  time: string
-  number_ppl_playing: string
-}
+
 
 
 const rootUrlEvents = '/api/v1/events'
 
 export async function getEvents() {
   const res = await request.get(rootUrlEvents)
-
   return res.body as Promise<FormattedEventWithUser[]>
 }
 
 export async function getEventById(id: number) {
   const res = await request.get(`${rootUrlEvents}/${id}`)
-
   return res.body as Promise<FormattedEventWithUser>
 }
 
@@ -38,7 +29,6 @@ export async function getEventsByUserId(id: number) {
 
 export async function addEvents(newEvent: snakeEvent) {
   return await request.post(`${rootUrlEvents}/add`).send(newEvent)
-
 }
 
 export async function cancelUserEvent(id: number) {

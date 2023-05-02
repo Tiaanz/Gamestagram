@@ -22,18 +22,16 @@ const MyEventCard = ({
 
   const [textColor, setTextColor] = useState('')
 
-   function handleOpen() {
+  function handleOpen() {
     setOpen(true)
   }
 
   const [open, setOpen] = useState(false)
 
-
   const handleCancel = async (userEventId: number) => {
     await cancelUserEvent(userEventId)
     fetchMyEvents(event.userId)
     setOpen(false)
- 
   }
 
   const handleClose = () => {
@@ -42,13 +40,26 @@ const MyEventCard = ({
 
   return (
     <>
-      <div className="rounded-2xl p-4 w-4/5 mb-12 shadow-md shadow-slate-200 bg-slate-100 ml-8" style={{ color: textColor }}>
-       <Link to={`/events/${event.eventId}`}><h2 className="mb-4 font-bold text-lg hover:underline">{event.eventName}</h2></Link> 
+      <div
+        className="rounded-2xl p-4 w-4/5 mb-12 shadow-md shadow-slate-200 bg-slate-100 ml-8"
+        style={{ color: textColor }}
+      >
+        <Link to={`/events/${event.eventId}`}>
+          <h2 className="mb-4 font-bold text-lg hover:underline">
+            {event.eventName}
+          </h2>
+        </Link>
         <p className="text-purple-500" style={{ color: textColor }}>
-          <b className="text-black" style={{ color: textColor }}>Role:</b> player
+          <b className="text-black" style={{ color: textColor }}>
+            Role:
+          </b>{' '}
+          player
         </p>
         <p className="text-green-500" style={{ color: textColor }}>
-          <b className="text-black" style={{ color: textColor }}>Status:</b> {event.status}
+          <b className="text-black" style={{ color: textColor }}>
+            Status:
+          </b>{' '}
+          {event.status}
         </p>
         <p>
           <b>Date:</b> {event.time}

@@ -47,10 +47,6 @@ export default function UserDetails() {
             ></img>
 
             <p className="py-6 mt-1 text-md text-gray-500">{user.bio}</p>
-            {/* <p>
-            Signed Up Since:{' '}
-            {currentUser.signedUpAt.toLocaleDateString()}
-          </p> */}
             <div className="py-8 underline">
               <a href={`mailto:${user.email}`}>Send an email</a>
             </div>

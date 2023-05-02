@@ -7,7 +7,6 @@ import {
 } from './subcomponents/Authenticated'
 
 import { useUserStore } from '../store/useUserStore'
-
 import { getUserByAuth0Id } from '../apis/apiClientUsers'
 
 export default function Nav() {
@@ -90,9 +89,6 @@ export default function Nav() {
 
             <IfNotAuthenticated>
               <div className="hidden md:block">
-                <button className="mr-5" onClick={handleLogIn}>
-                  Sign in
-                </button>
                 <button className="ml-5 mr-2swws" onClick={handleSignUp}>
                   Sign up
                 </button>
@@ -101,7 +97,6 @@ export default function Nav() {
 
             <IfAuthenticated>
               <div className="relative flex flex-row">
-                {/* <img className='rounded-full w-20 h-20' src={photoUrl} alt="profile pic"></img> */}
                 <button onClick={toggleDropdown}>{user?.nickname}</button>
 
                 <img

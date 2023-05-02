@@ -24,10 +24,8 @@ describe('ImageBanner', () => {
       name: 'Root',
     })
 
-
     //Assert
     expect(heading).toHaveTextContent(/root/i)
-
   })
 
   it('playtime should be displayed', async () => {
@@ -46,14 +44,14 @@ describe('ImageBanner', () => {
     render(<GameCard key={game.name} game={game} />)
 
     //Act
-    
-    const playTime = await screen.getByText(new RegExp(game.averagePlayTime, 'i'));
-   
+
+    const playTime = await screen.getByText(
+      new RegExp(game.averagePlayTime, 'i')
+    )
 
     //Assert
-   
+
     expect(playTime).toHaveTextContent(/60-90 minutes/i)
-  
   })
   it('description should be displayed', async () => {
     //Arrange
@@ -71,10 +69,12 @@ describe('ImageBanner', () => {
     render(<GameCard key={game.name} game={game} />)
 
     //Act
-    const description = await screen.getByText(new RegExp(game.description, 'i'));
+    const description = await screen.getByText(
+      new RegExp(game.description, 'i')
+    )
 
     //Assert
-    
+
     expect(description).toHaveTextContent(/it is a cute fun game/i)
   })
 })

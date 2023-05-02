@@ -18,3 +18,11 @@ export interface UserDeets {
   bio: string
   photoUrl: string
 }
+
+export interface snakeCaseUser {
+  user_name: string
+  email: string
+  auth0_Id: string
+  bio: string
+  photo_url: string
+}

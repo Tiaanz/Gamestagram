@@ -1,4 +1,4 @@
-import { Game, GameDB } from '../../models/Game'
+import { GameDB } from '../../models/Game'
 import { motion } from 'framer-motion'
 
 

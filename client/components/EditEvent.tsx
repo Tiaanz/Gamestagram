@@ -106,7 +106,6 @@ export default function EditEventPage() {
     const result = newTime.split(' ')
     const formattedDay = moment(result[0], 'DD-MM-YYYY').format('YYYY-MM-DD')
     const newHour = result[1]
-    console.log(result)
     setHour(newHour)
     setDay(formattedDay)
   }

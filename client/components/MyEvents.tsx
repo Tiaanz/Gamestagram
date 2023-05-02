@@ -11,7 +11,6 @@ import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
 
 const MyEvents = () => {
-  // const { id } = useParams()
   const currentUser = useUserStore((state) => state.currentUser)
   const { isAuthenticated, isLoading } = useAuth0()
 
@@ -31,7 +30,6 @@ const MyEvents = () => {
   return (
     <>
     <ImageBanner name="Events" url="/pics/banner3.jpg" />
-    
       
       {isLoading &&   <Box sx={{ display: 'flex', justifyContent: 'center',marginTop:"50px" }}>
             <CircularProgress />

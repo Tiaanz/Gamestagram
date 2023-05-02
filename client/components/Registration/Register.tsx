@@ -6,6 +6,7 @@ import {
   getUserByAuth0Id,
   editUserById,
 } from '../../apis/apiClientUsers'
+
 import { useUserStore } from '../../store/useUserStore'
 
 export default function Register() {
@@ -48,7 +49,6 @@ export default function Register() {
       const userName = formData.get('userName') as string
       const photoUrl = formData.get('photoUrl') as string
       const bio = formData.get('bio') as string
-
       const email = user?.email
       const auth0Id = user?.sub
       const newUser = {
@@ -58,7 +58,6 @@ export default function Register() {
         email,
         auth0_Id: auth0Id,
       }
-
       await addUser(newUser)
       setshowRegister(false)
     } else {

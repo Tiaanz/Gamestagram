@@ -77,3 +77,13 @@ export interface EditEvent {
 export interface Status {
   status: string
 }
+
+export interface snakeEvent {
+  host_id: number
+  event_name: string
+  game_id: string
+  description: string
+  location: string |undefined
+  time: string
+  number_ppl_playing: string
+}

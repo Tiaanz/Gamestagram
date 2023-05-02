@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { addEvents } from '../apis/apiClientEvents'
-
 import { getGameByApiId, addGame } from '../apis/apiClientGames'
-
 import { useUserStore } from '../store/useUserStore'
 import { Game, GameDB } from '../../models/Game'
 import { Autocomplete, TextField } from '@mui/material'
@@ -12,7 +10,7 @@ import { useGamesStore } from '../store/useGamesStore'
 import { shallow } from 'zustand/shallow'
 
 export function Addevent() {
-  const { games, fetchGamesFromAPI, setGames, isLoading } = useGamesStore(
+  const { games, fetchGamesFromAPI} = useGamesStore(
     (state) => ({
       games: state.games,
       isLoading: state.isLoading,
@@ -24,11 +22,9 @@ export function Addevent() {
 
   const navigate = useNavigate()
   const currentUser = useUserStore((state) => state.currentUser)
-  // const [games, setGames] = useState<Game[]>([])
   const [selectedGameId, setSelectedGameId] = useState('')
   const [gameName, setGameName] = useState('')
   const [disButton, setDisButton] = useState(false)
-
   const [success, setSuccess] = useState<boolean>(false)
   const [filteredGames, setFilteredGames] = useState<GameDB[]>(games)
   const [address, setAddress] = useState<string | undefined>('')
@@ -37,16 +33,17 @@ export function Addevent() {
     types: ['geocode'],
     componentRestrictions: { country: 'nz' },
   }
-  useEffect(() => {
-    fetchGamesFromAPI(100)
-  }, [])
+
 
   useEffect(() => {
+    fetchGamesFromAPI(100)
     const filtered = games.filter((game) =>
       game.name.toLowerCase().includes(gameName.toLowerCase())
     )
     setFilteredGames(filtered)
+
   }, [games, gameName])
+
   useEffect(() => {
     const input = document.getElementById('autocomplete') as HTMLInputElement
     const autocomplete = new google.maps.places.Autocomplete(input, options)
@@ -57,6 +54,7 @@ export function Addevent() {
       setAddress(place.formatted_address)
     })
   }, [])
+
   const handleAddressChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setAddress(event.target.value)
   }
@@ -84,7 +82,6 @@ export function Addevent() {
     const form = event.currentTarget
     const formData = new FormData(form)
     const eventName = formData.get('eventName') as string
-
     const description = formData.get('description') as string
     const numberPpl = formData.get('numberPpl') as string
     const hostId = currentUser.id
@@ -113,7 +110,6 @@ export function Addevent() {
         number_player: apiGame?.playerCount,
         photo_url: apiGame?.photoUrl,
       }
-
       const apiId = await getGameByApiId(selectedGameId)
       if (apiId) {
         await addEvents(newEvent)

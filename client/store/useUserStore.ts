@@ -21,7 +21,6 @@ export const useUserStore = create<IUser>((set) => ({
     bio: '',
     email: '',
     photoUrl: '',
-    // signedUpAt: new Date(),
   },
   setUser: (newUser: NewUser) =>
     set((state) => ({
