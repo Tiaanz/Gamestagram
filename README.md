@@ -2,28 +2,28 @@
 Gamestagram is an web application designed to provide a platform for board game enthusiasts who struggle to find people to play with. By signing up to the platform, users can browse and join board game events hosted by other users, create their own events, and efficiently manage their events. With Gamestagram, users will never have to worry about finding a group to play with, as they can easily connect with other like-minded individuals and enjoy their favorite games together.
 
 
-### Key features
-#### Sign up and sign in with Google account or your prefered email
-#### Personal profile management, where users can update their details and preferences
-#### Join board game events hosted by other users
-#### Host their own board game events and manage them
-#### Receive email notifications if the event is cancelled
-#### Integration of external board game APIs to display game information
-#### Google Maps integration to display event location
+## Key features
+#### • Sign up and sign in with Google account or your prefered email
+#### • Personal profile management, where users can update their details and preferences
+#### • Join board game events hosted by other users
+#### • Host their own board game events and manage them
+#### • Receive email notifications if the event is cancelled
+#### • Integration of external board game APIs to display game information
+#### • Google Maps integration to display event location
 
 
-### Tech stack
-#### TypeScript
-#### React
-#### Tailwindcss
-#### Auth0
-#### sendGrid
-#### REST API
-#### Google Map API
-#### SQLite (with knex)
-#### Express.js
-#### Zustand
-#### Jest
+## Tech stack
+#### • TypeScript
+#### • React
+#### • Tailwindcss
+#### • Auth0
+#### • sendGrid
+#### • REST API
+#### • Google Map API
+#### • SQLite (with knex)
+#### • Express.js
+#### • Zustand
+#### • Jest
 
 
 ### Installation
@@ -50,7 +50,7 @@ http://localhost:3000
 
 ```
 
-### Stretch
+## Stretch
 #### 1.Instant messaging:
  Allow users to send instant messages to other users to facilitate communication before or during events.
 
