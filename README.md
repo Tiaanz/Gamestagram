@@ -28,7 +28,7 @@ With Gamestagram, users will never have to worry about finding a group to play w
 #### • Jest
 
 
-### Installation
+## Installation
 #### 1. Clone this repository
 #### 2. Install the packages
 ```
