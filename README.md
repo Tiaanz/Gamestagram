@@ -1,4 +1,4 @@
-![boardgame!](server/public/pics/banner1.jpg | height=100)
+![boardgame!](server/public/pics/banner1.jpg|height=100)
 
 # Gamestagram
 
