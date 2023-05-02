@@ -1,5 +1,7 @@
 # Gamestagram
-Gamestagram is an web application designed to provide a platform for board game enthusiasts who struggle to find people to play with. By signing up to the platform, users can browse and join board game events hosted by other users, create their own events, and efficiently manage their events. With Gamestagram, users will never have to worry about finding a group to play with, as they can easily connect with other like-minded individuals and enjoy their favorite games together.
+Gamestagram is an web application designed to provide a platform for board game enthusiasts who struggle to find people to play with. By signing up to the platform, users can browse and join board game events hosted by other users, create their own events, and efficiently manage their events.
+
+With Gamestagram, users will never have to worry about finding a group to play with, as they can easily connect with other like-minded individuals and enjoy their favorite games together.
 
 
 ## Key features
