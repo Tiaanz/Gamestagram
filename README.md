@@ -94,3 +94,17 @@ Enable users to rate and review other users after participating in an event to h
 #### 3.Event creation based on boardgames:
 
 Allow users to create an event based on a specific board game they are browsing, making it easier for users to find and join events that interest them.
+
+## Code Contributors
+<a href="https://github.com/Dethorasis">
+  <img src="https://contrib.rocks/image?repo=Dethorasis/Dethorasis" />
+</a>
+<a href="https://github.com/kason-cheong">
+  <img src="https://contrib.rocks/image?repo=kason-cheong/sprint-1-workshop" />
+</a>
+<a href="https://github.com/KemaxLong">
+  <img src="https://contrib.rocks/image?repo=KemaxLong/dev-academy" />
+</a>
+<a href="https://github.com/Kurt-Leong">
+  <img src="https://contrib.rocks/image?repo=Kurt-Leong/Kurtleong.git.io" />
+</a>
