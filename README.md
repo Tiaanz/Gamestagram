@@ -79,6 +79,7 @@ npm run dev
 http://localhost:3000
 
 ```
+<img src="server/public/pics/Gamestagram-home.png" alt="boardgame">
 
 ## Stretch
 
