@@ -3,27 +3,27 @@ Gamestagram is an web application designed to provide a platform for board game 
 
 
 ### Key features
-• Sign up and sign in with Google account or your prefered email
-• Personal profile management, where users can update their details and preferences
-• Join board game events hosted by other users
-• Host their own board game events and manage them
-• Receive email notifications if the event is cancelled
-• Integration of external board game APIs to display game information
-• Google Maps integration to display event location
+#### Sign up and sign in with Google account or your prefered email
+#### Personal profile management, where users can update their details and preferences
+#### Join board game events hosted by other users
+#### Host their own board game events and manage them
+#### Receive email notifications if the event is cancelled
+#### Integration of external board game APIs to display game information
+#### Google Maps integration to display event location
 
 
 ### Tech stack
-• TypeScript
-• React
-• Tailwindcss
-• Auth0
-• sendGrid
-• REST API
-• Google Map API
-• SQLite (with knex)
-• Express.js
-• Zustand
-• Jest
+#### TypeScript
+#### React
+#### Tailwindcss
+#### Auth0
+#### sendGrid
+#### REST API
+#### Google Map API
+#### SQLite (with knex)
+#### Express.js
+#### Zustand
+#### Jest
 
 
 ### Installation
@@ -51,13 +51,13 @@ http://localhost:3000
 ```
 
 ### Stretch
-#### Instant messaging:
+#### 1.Instant messaging:
  Allow users to send instant messages to other users to facilitate communication before or during events.
 
-#### Rating and reviews: 
+#### 2.Rating and reviews: 
 Enable users to rate and review other users after participating in an event to help build trust and accountability within the community.
 
-#### Event creation based on boardgames: 
+#### 3.Event creation based on boardgames: 
 Allow users to create an event based on a specific board game they are browsing, making it easier for users to find and join events that interest them.
 
 
