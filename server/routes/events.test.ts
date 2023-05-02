@@ -6,7 +6,6 @@ import * as db from '../db/events'
 jest.mock('../db/events')
 
 test('GET /events should return an array of events', async () => {
-  // here we should mock our db functions
   const mockGetEvents = jest.mocked(db.getEvents)
   mockGetEvents.mockResolvedValue([
     {
@@ -50,7 +49,6 @@ test('GET /events should return an array of events', async () => {
 })
 
 test('GET /events/:id should return an object of event', async () => {
-  // here we should mock our db functions
   const mockGetEvents = jest.mocked(db.getEventsById)
   mockGetEvents.mockResolvedValue({
     eventId: 2,
@@ -85,7 +83,6 @@ test('GET /events/:id should return an object of event', async () => {
 })
 
 test('GET /my-events/user/: should return an array of event', async () => {
-  // here we should mock our db functions
   const mockGetEvents = jest.mocked(db.getEventsByUserId)
   mockGetEvents.mockResolvedValue([
     {

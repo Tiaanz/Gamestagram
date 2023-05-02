@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { GameDB, Game } from '../../models/Game'
+import type { GameDB} from '../../models/Game'
 import { getGames, getGamesFromAPI } from '../apis/apiClientGames'
 
 interface IGame {

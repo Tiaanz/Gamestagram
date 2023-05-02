@@ -5,7 +5,6 @@ interface NewUser {
   userName: string
   bio: string
   photoUrl: string
-  // signedUpAt: Date
   email: string
 }
 

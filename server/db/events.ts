@@ -2,7 +2,7 @@ import connection from './connection'
 
 import type { Event, EventDB, UserEventDB, Status } from '../../models/Event'
 
-import { formatEvent, formatEventList } from '../public/formatter'
+import { formatEvent, formatEventList } from './formatter'
 import { FormattedEventWithUser } from '../../models/Event'
 
 export function getEvents(db = connection): Promise<FormattedEventWithUser[]> {
@@ -31,7 +31,6 @@ export function getEvents(db = connection): Promise<FormattedEventWithUser[]> {
 }
 
 export function getEventsById(id: number, db = connection) {
-  // ): Promise<FormattedEventWithUser>
   return db('user_event')
     .join('events', 'user_event.event_id', 'events.id')
     .join('users', 'user_event.user_id', 'users.id')
@@ -74,17 +73,6 @@ export function getEventsByUserId(id: number, db = connection) {
     )
 }
 
-// export function getEventsByHostId(id: number, db = connection) {
-//   return db('events')
-//     .where('host_id', id)
-//     .select(
-//       'events.id as eventId',
-//       'events.host_id as hostId',
-//       'events.event_name as eventName',
-//       'time',
-//       'location'
-//     )
-// }
 
 export function addEvent(data: EventDB, db = connection): Promise<number[]> {
   const timestamp = new Date(Date.now())
