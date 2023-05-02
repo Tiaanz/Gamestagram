@@ -1,5 +1,5 @@
-![boardgame!](server/public/pics/banner1.jpg|height=100)
-
+<!-- ![boardgame!](server/public/pics/banner1.jpg) -->
+<img src="server/public/pics/banner1.jpg" alt="boardgame" width="300" height="200">
 # Gamestagram
 
 Gamestagram is an web application designed to provide a platform for board game enthusiasts who struggle to find people to play with. By signing up to the platform, users can browse and join board game events hosted by other users, create their own events, and efficiently manage their events.
