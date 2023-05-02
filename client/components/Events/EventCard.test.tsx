@@ -1,6 +1,5 @@
-
 import { render } from '@testing-library/react'
-import { FormattedEventWithUser } from '../../models/Event'
+import { FormattedEventWithUser } from '../../../models/Event'
 import { BrowserRouter as Router } from 'react-router-dom'
 import EventCard from './EventCard'
 import '@testing-library/jest-dom'

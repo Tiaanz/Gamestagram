@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import { EditEvent } from '../../models/Event'
-import { updateEvent, getEventById } from '../apis/apiClientEvents'
+import { EditEvent } from '../../../models/Event'
+import { updateEvent, getEventById } from '../../apis/apiClientEvents'
 import { useParams, useNavigate } from 'react-router-dom'
 import moment from 'moment'
-import ImageBanner from './subcomponents/ImageBanner'
+import ImageBanner from '../subcomponents/ImageBanner'
 
 export default function EditEventPage() {
   const { id } = useParams()

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
-import { getUserById } from '../apis/apiClientUsers'
+import { getUserById } from '../../apis/apiClientUsers'
 import { useEffect, useState } from 'react'
-import { UserDeets } from '../../models/Users'
+import { UserDeets } from '../../../models/Users'
 import { useAuth0 } from '@auth0/auth0-react'
 
 export default function UserDetails() {

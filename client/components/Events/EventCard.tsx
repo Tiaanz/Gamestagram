@@ -1,6 +1,6 @@
-import type { FormattedEventWithUser } from '../../models/Event'
+import type { FormattedEventWithUser } from '../../../models/Event'
 import { Link } from 'react-router-dom'
-import { formatTime, limitLocationLength } from '../helper/helperFunction'
+import { formatTime, limitLocationLength } from '../../helper/helperFunction'
 import { motion } from 'framer-motion'
 
 function EventCard({ event }: { event: FormattedEventWithUser }) {

@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import { useEventsStore } from '../store/useEventsStore'
+import { useEventsStore } from '../../store/useEventsStore'
 import { shallow } from 'zustand/shallow'
 import EventCard from './EventCard'
-import ImageBanner from './subcomponents/ImageBanner'
+import ImageBanner from '../subcomponents/ImageBanner'
 
 const Events = () => {
   const { events, fetchEvents, setFilteredEvents } = useEventsStore(

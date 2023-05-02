@@ -4,10 +4,10 @@ import { useAuth0 } from '@auth0/auth0-react'
 import {
   IfAuthenticated,
   IfNotAuthenticated,
-} from './subcomponents/Authenticated'
+} from '../subcomponents/Authenticated'
 
-import { useUserStore } from '../store/useUserStore'
-import { getUserByAuth0Id } from '../apis/apiClientUsers'
+import { useUserStore } from '../../store/useUserStore'
+import { getUserByAuth0Id } from '../../apis/apiClientUsers'
 
 export default function Nav() {
   const [dropdownOpen, setDropdownOpen] = useState(false)

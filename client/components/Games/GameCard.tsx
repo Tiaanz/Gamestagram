@@ -1,6 +1,5 @@
-import { GameDB } from '../../models/Game'
+import { GameDB } from '../../../models/Game'
 import { motion } from 'framer-motion'
-
 
 function GameCard({ game }: { game: GameDB }) {
   function filterOutTags(input: string): string {
@@ -8,7 +7,6 @@ function GameCard({ game }: { game: GameDB }) {
     const regex = /<\/?[\w\s="/.':;#-\/\?]+>/g
     return input.replace(regex, '')
   }
-
 
   return (
     <motion.div whileHover={{ scale: 1.2 }}>

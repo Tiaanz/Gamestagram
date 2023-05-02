@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { BrowserRouter, MemoryRouter } from 'react-router-dom'
 import Nav from './Nav'
 import '@testing-library/jest-dom'

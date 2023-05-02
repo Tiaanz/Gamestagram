@@ -1,16 +1,16 @@
-import { useEventStore } from '../store/useEventStore'
+import { useEventStore } from '../../store/useEventStore'
 import { shallow } from 'zustand/shallow'
-import { getUserById } from '../apis/apiClientUsers'
+import { getUserById } from '../../apis/apiClientUsers'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { addUserEvent } from '../apis/apiClientEvents'
-import { useGameStore } from '../store/useGameStore'
+import { addUserEvent } from '../../apis/apiClientEvents'
+import { useGameStore } from '../../store/useGameStore'
 import { useAuth0 } from '@auth0/auth0-react'
 import { CiLocationOn, CiTimer } from 'react-icons/ci'
-import ImageBanner from './subcomponents/ImageBanner'
+import ImageBanner from '../subcomponents/ImageBanner'
 import { Link } from 'react-router-dom'
-import { useUserStore } from '../store/useUserStore'
-import Map from './Map'
+import { useUserStore } from '../../store/useUserStore'
+import Map from '../subcomponents/Map'
 
 function EventDetail() {
   const { loginWithRedirect } = useAuth0()

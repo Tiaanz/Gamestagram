@@ -1,10 +1,10 @@
-import { cancelUserEvent } from '../apis/apiClientEvents'
+import { cancelUserEvent } from '../../apis/apiClientEvents'
 import { useState, useEffect } from 'react'
 import Button from '@mui/material/Button'
 import Dialog from '@mui/material/Dialog'
 import DialogActions from '@mui/material/DialogActions'
 import DialogTitle from '@mui/material/DialogTitle'
-import { MyEvent } from '../../models/Event'
+import { MyEvent } from '../../../models/Event'
 import { Link } from 'react-router-dom'
 
 const MyEventCard = ({

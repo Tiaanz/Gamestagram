@@ -1,5 +1,5 @@
-import EventCard from './EventCard'
-import GameCard from './GameCard'
+import EventCard from './Events/EventCard'
+import GameCard from './Games/GameCard'
 import { useEventsStore } from '../store/useEventsStore'
 import { useGamesStore } from '../store/useGamesStore'
 import { shallow } from 'zustand/shallow'
@@ -8,7 +8,6 @@ import ImageBanner from './subcomponents/ImageBanner'
 import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
 import { Link } from 'react-router-dom'
-
 
 function Home() {
   const { events, fetchEvents } = useEventsStore(
@@ -50,12 +49,11 @@ function Home() {
             })}
           </div>
         </section>
-         <Link to={'/events'}>
-        <div className="text-right text-xl mt-4 text-purple-500">
-          More &gt;&gt;
-        </div>
-           </Link>
-
+        <Link to={'/events'}>
+          <div className="text-right text-xl mt-4 text-purple-500">
+            More &gt;&gt;
+          </div>
+        </Link>
 
         <h2 className=" my-10 font-sans text-4xl font-bold text-center md:text-left">
           Popular Games
@@ -69,10 +67,10 @@ function Home() {
             </section>
 
             <Link to={'/boardgames'}>
-            <div className="text-right text-xl mt-4 text-purple-500">
-              More &gt;&gt;
+              <div className="text-right text-xl mt-4 text-purple-500">
+                More &gt;&gt;
               </div>
-              </Link>
+            </Link>
           </>
         ) : (
           <Box
