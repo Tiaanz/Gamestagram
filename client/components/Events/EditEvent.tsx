@@ -42,10 +42,6 @@ export default function EditEventPage() {
     e.preventDefault()
     const form = e.currentTarget
 
-    const formData = new FormData(form)
-    // const description = formData.get('description') as string
-    // const numberPpl = formData.get('numberOfPeople') as string
-
     const FormattedDate = moment(day, 'YYYY-MM-DD').format('DD-MM-YYYY')
     const timeDb = `${FormattedDate} ${hour}`
 
